@@ -10,3 +10,7 @@
 body{
   font-family: "Lexend", "Fira Sans", sans-serif;
 }
+
+.bg{
+  background-image: linear-gradient(0deg, rgba(21, 11, 43, 0.90) 0%, rgba(21, 11, 43, 0.00) 100%),  url(../src/assets/images/banner.png);
+}

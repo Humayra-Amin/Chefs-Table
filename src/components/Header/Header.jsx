@@ -16,7 +16,7 @@ const Header = () => {
                         </ul>
 
                     </div>
-                    <a className="btn btn-ghost lg:text-xl">Recipe Calories</a>
+                    <a className="btn btn-ghost lg:text-3xl">Recipe Calories</a>
                 </div>
 
                 <div className="navbar-center hidden lg:flex mr-[230px]">
@@ -34,8 +34,8 @@ const Header = () => {
                     </div>
                     <div className="dropdown dropdown-end">
                         <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
-                            <div className="w-10 rounded-full">
-                                <img alt="Tailwind CSS Navbar component" src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                            <div className="w-10 rounded-full bg-green-400">
+                                <img alt="Tailwind CSS Navbar component" src="../src/assets/images/profile-icon.svg" />
                             </div>
                         </div>
                         <ul tabIndex={0} className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52">
