@@ -1,0 +1,56 @@
+ [
+      {
+        "recipe_id": 1,
+        "recipe_name": "Grilled Lemon Herb Chicken",
+        "short_description": "Juicy and flavorful grilled chicken marinated in a tangy lemon herb marinade.",
+        "ingredients": ["550 g chicken", "120 ml lemon juice", "2 cloves garlic, minced", "2 tbsp olive oil", "1 tsp dried thyme", "1 tsp dried rosemary", "Salt and pepper to taste"],
+        "preparing_time": "25 min",
+        "calories": "280 calories",
+        "recipe_image": "https://i.ibb.co/kmjnx46/grilled-lemon-herb-chicken.jpg"
+      },
+      {
+        "recipe_id": 2,
+        "recipe_name": "Caprese Salad",
+        "short_description": "A refreshing salad featuring ripe tomatoes, fresh mozzarella, and fragrant basil leaves drizzled with balsamic glaze.",
+        "ingredients": ["4 large tomatoes", "200 g fresh mozzarella cheese", "1 bunch fresh basil leaves", "2 tbsp balsamic glaze", "Salt and pepper to taste"],
+        "preparing_time": "15 min",
+        "calories": "180 calories",
+        "recipe_image": "https://i.ibb.co/Sn2JHRG/caprese-salad.jpg"
+      },
+      {
+        "recipe_id": 3,
+        "recipe_name": "Vegetable Stir Fry",
+        "short_description": "A colorful and nutritious stir-fry featuring a medley of fresh vegetables tossed in a savory soy sauce.",
+        "ingredients": ["200 g broccoli florets", "150 g bell peppers, sliced", "150 g carrots, julienned", "100 g snap peas", "120 ml soy sauce", "2 cloves garlic, minced", "1 tbsp sesame oil", "1 tsp grated ginger"],
+        "preparing_time": "20 min",
+        "calories": "220 calories",
+        "recipe_image": "https://i.ibb.co/wYK0fMk/vegetable-stir-fry.jpg"
+      },
+      {
+        "recipe_id": 4,
+        "recipe_name": "Spaghetti Carbonara",
+        "short_description": "A classic Italian pasta dish featuring spaghetti tossed in a creamy egg and cheese sauce with crispy pancetta.",
+        "ingredients": ["350 g spaghetti", "150 g pancetta or bacon, diced", "2 cloves garlic, minced", "3 large eggs", "100 g grated Parmesan cheese", "Salt and black pepper to taste", "Chopped parsley for garnish"],
+        "preparing_time": "30 min",
+        "calories": "380 calories",
+        "recipe_image": "https://i.ibb.co/3N1SV8z/Spaghetti-Carbonara1.jpg"
+      },
+      {
+        "recipe_id": 5,
+        "recipe_name": "Mango Avocado Salsa",
+        "short_description": "A vibrant and refreshing salsa featuring ripe mangoes, creamy avocados, and zesty lime juice.",
+        "ingredients": ["2 ripe mangoes, diced", "2 ripe avocados, diced", "1/4 cup red onion, finely chopped", "1/4 cup fresh cilantro, chopped", "1 jalapeno, seeded and diced", "Juice of 2 limes", "Salt to taste"],
+        "preparing_time": "10 min",
+        "calories": "120 calories",
+        "recipe_image": "https://i.ibb.co/gzfxpjQ/Mango-Avocado-Salsa.jpg"
+      },
+      {
+        "recipe_id": 6,
+        "recipe_name": "Homemade Margherita Pizza",
+        "short_description": "A classic Italian pizza featuring a thin crust topped with tangy tomato sauce, fresh mozzarella, and fragrant basil leaves.",
+        "ingredients": ["1 pizza dough", "200 g fresh mozzarella cheese", "1 cup tomato sauce", "1/4 cup fresh basil leaves", "2 tbsp olive oil", "Salt and pepper to taste"],
+        "preparing_time": "35 min",
+        "calories": "320 calories",
+        "recipe_image": "https://i.ibb.co/ZHck21H/margherita-pizza.jpg"
+      }
+]

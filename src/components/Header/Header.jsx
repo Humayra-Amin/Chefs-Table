@@ -1,3 +1,6 @@
+import profile from '../../assets/images/profile-icon.svg'
+import search from '../../assets/images/search.svg'
+
 const Header = () => {
     return (
         <div>
@@ -29,13 +32,16 @@ const Header = () => {
                 </div>
 
                 <div className="flex-none gap-2">
-                    <div className="form-control">
-                        <input type="text" placeholder="Search" className="input input-bordered w-24 lg:w-auto md:w-auto rounded-full" />
-                    </div>
+
+                    <label className="input input-bordered flex items-center rounded-full gap-2">
+                        <img src={search} alt="" />
+                        <input type="text" className="grow" placeholder="Search" />
+                    </label>
+
                     <div className="dropdown dropdown-end">
                         <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
                             <div className="w-10 rounded-full bg-green-400">
-                                <img alt="Tailwind CSS Navbar component" src="../src/assets/images/profile-icon.svg" />
+                                <img alt="Tailwind CSS Navbar component" src={profile} />
                             </div>
                         </div>
                         <ul tabIndex={0} className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52">
