@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import clock from '../../assets/images/clock.svg'
 import fire from '../../assets/images/fire.svg'
 
-const Card = ({ card }) => {
+const Card = ({ card, handleAddToCook }) => {
 
     if (!card) {
         return;
@@ -27,7 +27,7 @@ const Card = ({ card }) => {
                     <img src={fire} alt="" className='w-[24px] h-[24px]' /> {calories}
                    </div>
                     <div className="card-actions">
-                        <button className="btn btn-accent rounded-full">Want to Cook</button>
+                        <button onClick={() => handleAddToCook(card)} className="btn btn-accent rounded-full">Want to Cook</button>
                     </div>
                 </div>
             </div>
@@ -36,7 +36,8 @@ const Card = ({ card }) => {
 };
 
 Card.propTypes = {
-    card: PropTypes.object
+    card: PropTypes.object,
+    handleAddToCook: PropTypes.func
 }
 
 export default Card;

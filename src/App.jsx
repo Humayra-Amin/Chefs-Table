@@ -1,5 +1,6 @@
 // import { useState } from 'react'
 
+import { useState } from 'react'
 import './App.css'
 import Banner from './components/Banner/Banner'
 import Card from './components/Card/Card'
@@ -8,6 +9,14 @@ import Recipes from './components/Recipes/Recipes'
 import Table from './components/Table/Table'
 
 function App() {
+
+  const [tables, setTables] = useState([])
+
+  const handleAddToCook = card =>{
+    // console.log(card)
+    const newTables = [...tables, card];
+    setTables(newTables);
+  }
 
   return (
     <>
@@ -27,7 +36,7 @@ function App() {
 
           <div className='col-span-2'>
 
-            <Recipes></Recipes>
+            <Recipes handleAddToCook={handleAddToCook}></Recipes>
 
             <div className='grid grid-cols-2 gap-5'>
 
@@ -39,7 +48,7 @@ function App() {
 
           <div className='col-span-1'>
 
-            <Table></Table>
+            <Table tables={tables}></Table>
 
           </div>
 
