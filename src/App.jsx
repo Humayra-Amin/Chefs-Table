@@ -1,5 +1,3 @@
-// import { useState } from 'react'
-
 import { useState } from 'react'
 import './App.css'
 import Banner from './components/Banner/Banner'
@@ -8,22 +6,33 @@ import Header from './components/Header/Header'
 import Recipes from './components/Recipes/Recipes'
 import Table from './components/Table/Table'
 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 function App() {
 
   const [tables, setTables] = useState([])
 
-  const handleAddToCook = card =>{
+  const handleAddToCook = card => {
     // console.log(card)
-    const newTables = [...tables, card];
-    setTables(newTables);
+
+    const isExist = tables.find(item => item.recipe_id == card.recipe_id);
+    if (!isExist) {
+      const newTables = [...tables, card];
+      setTables(newTables);
+    }
+    else {
+      toast("already exist")
+    }
   }
+
 
   return (
     <>
 
       <Header></Header>
       <Banner></Banner>
-
+      <ToastContainer></ToastContainer>
 
       <div className='container mx-auto my-5'>
 
@@ -40,7 +49,7 @@ function App() {
 
             <div className='grid grid-cols-2 gap-5'>
 
-            <Card></Card>
+              <Card></Card>
 
             </div>
 
