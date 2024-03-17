@@ -13,6 +13,7 @@ const Recipes = ({handleAddToCook}) => {
             .then(res => res.json())
             .then(data => setRecipes(data))
     }, [])
+    
 
     return (
         <div className="container mx-auto my-5">

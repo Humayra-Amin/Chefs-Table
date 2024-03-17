@@ -13,6 +13,9 @@ function App() {
 
   const [tables, setTables] = useState([])
 
+  const [currentCook, setCurrentCook] = useState([])
+
+
   const handleAddToCook = card => {
     // console.log(card)
 
@@ -24,6 +27,19 @@ function App() {
     else {
       toast("already exist")
     }
+  }
+
+  const handleAddToCurrentCook = idx =>{
+
+    const prepareBtn = tables[idx];
+
+    const newCurrentCook = [...currentCook, prepareBtn];
+
+    setCurrentCook(newCurrentCook);
+
+    const newTables = tables.filter((item, index) => index !== idx);
+
+    setTables(newTables);
   }
 
 
@@ -57,7 +73,7 @@ function App() {
 
           <div className='col-span-1'>
 
-            <Table tables={tables}></Table>
+            <Table tables={tables} currentCook={currentCook} handleAddToCurrentCook={handleAddToCurrentCook}></Table>
 
           </div>
 
